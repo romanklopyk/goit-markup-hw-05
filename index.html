@@ -446,10 +446,25 @@
                     </li>
                 </ul>
             </div>
+            <div class="column subscribe-column">
+                <form>
+                    <label class="footer-text-subscribe" for="footer-email">Subscribe</label>
+                    <div class="footer-email-wrapper flex">
+                        <input type="email" name="footerEmail" id="footer-email" placeholder="E-mail"
+                               class="footer-email-input">
+                        <button type="submit" class="footer-submit-btn flex">
+                            Subscribe
+                            <svg width="24" height="24" class="footer-email-svg">
+                                <use href="./images/modal.svg#footer-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 </div>
-<div class="modal-overlay">
+<div class="modal-overlay ">
     <div class="modal-window flex">
 
         <button type="button" class="modal-close-button">
@@ -460,30 +475,30 @@
 
         <p class="modal-form-title">Leave your contacts and we will call you back</p>
 
-        <form name="modal-form" class="modal-form" >
+        <form name="modal-form" class="modal-form">
 
             <label for="input-name" class="input-name-label">Name</label>
-            <div class="name-wrapper" >
-                <svg width="18" height="18" class="name-svg">
+            <div class="name-wrapper">
+                <svg width="18" height="24" class="name-svg">
                     <use href="./images/modal.svg#modal-11"/>
                 </svg>
-                <input type="text" id="input-name" name="name" class="input-name"  required>
+                <input type="text" id="input-name" name="name" class="input-name" required>
             </div>
 
             <label for="input-phone" class="input-phone-label">Phone</label>
-            <div class="phone-wrapper" >
-                <svg width="13" height="13" class="phone-svg">
+            <div class="phone-wrapper">
+                <svg width="18" height="24" class="phone-svg">
                     <use href="./images/modal.svg#modal-23"/>
                 </svg>
-                <input type="text" id="input-phone" name="phone" class="input-phone" required>
+                <input type="tel" id="input-phone" name="phone" class="input-phone" required>
             </div>
 
             <label for="input-email" class="input-email-label">Email </label>
             <div class="email-wrapper">
-                <svg width="15" height="12" class="email-svg">
+                <svg width="18" height="24" class="email-svg">
                     <use href="./images/modal.svg#modal-32"/>
                 </svg>
-                <input type="text" id="input-email" class="input-email" name="phone" required>
+                <input type="email" id="input-email" class="input-email" name="email" required>
             </div>
 
             <label for="comment" class="textarea-label">Comment</label>

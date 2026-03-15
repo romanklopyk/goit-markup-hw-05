@@ -413,6 +413,10 @@ input {
     padding-block: 100px;
 }
 
+.footer .container {
+    /*background-color: cornflowerblue;*/
+}
+
 .footer-logo {
     display: block;
     margin-bottom: 16px;
@@ -460,6 +464,62 @@ input {
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);;
 }
 
+.footer .column.subscribe-column {
+    /*background-color: #31d0aa;*/
+    max-width: none;
+    flex-grow: 1;
+}
+
+.footer-text-subscribe {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 2%;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.footer-email-wrapper {
+    align-items: center;
+    gap: 24px;
+}
+
+
+.footer-email-input {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 4%;
+    color: var(--white-background);
+    outline: none;
+    border: 1px solid var(--white-background);
+    background-color: transparent;
+    flex-grow: 1;
+    height: 40px;
+
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.footer-submit-btn {
+    background-color: var(--primary-brand);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: var(--white-background);
+    cursor: pointer;
+    padding: 8px 24px;
+    align-items: center;
+    gap: 16px;
+    height: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer-email-svg {
+    fill: var(--white-background);
+}
+
 /*----------------MODAL WINDOW------------------*/
 
 .modal-overlay {
@@ -472,9 +532,15 @@ input {
     justify-content: center;
     align-items: center;
     background-color: color-mix(in srgb, var(--modal-overlay), transparent 60%);
-
     z-index: 99999;
+    pointer-events: none;
+    opacity: 0;
 
+}
+
+.is-open {
+    pointer-events: all;
+    opacity: 1;
 }
 
 .modal-window {
@@ -548,10 +614,8 @@ input {
 .name-svg, .email-svg, .phone-svg {
     width: 12px;
     height: 12px;
-    fill: currentColor;
+    fill: black;
 }
-
-
 
 .input-name, .input-email, .input-phone {
     border: none;
@@ -561,7 +625,7 @@ input {
     color: var(--text);
 }
 
-.input-name:focus-within, .input-email:focus-within, .input-phone:focus-within{
+.input-name:focus-within, .input-email:focus-within, .input-phone:focus-within {
     color: var(--primary-brand);
 }
 
@@ -572,6 +636,7 @@ input {
     margin-bottom: 16px;
     outline: none;
 }
+
 .textarea:focus-within {
     border: 1px solid var(--primary-brand);
     color: var(--primary-brand);
