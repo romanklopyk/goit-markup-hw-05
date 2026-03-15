@@ -467,7 +467,8 @@ input {
 .footer .column.subscribe-column {
     /*background-color: #31d0aa;*/
     max-width: none;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
+    margin-left: auto;
 }
 
 .footer-text-subscribe {
@@ -493,12 +494,16 @@ input {
     outline: none;
     border: 1px solid var(--white-background);
     background-color: transparent;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     height: 40px;
-
-
+    width: 264px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px #00000026;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-email-input:is(:hover, :focus){
+    border-color: var(--success);
 }
 
 .footer-submit-btn {
@@ -514,8 +519,12 @@ input {
     height: 40px;
     font-weight: 500;
     line-height: 1.5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-submit-btn:is(:hover, :focus) {
+    background-color: var(--success);
+}
 .footer-email-svg {
     fill: var(--white-background);
 }
@@ -612,8 +621,8 @@ input {
 }
 
 .name-svg, .email-svg, .phone-svg {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 24px;
     fill: black;
 }
 
