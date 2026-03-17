@@ -541,7 +541,7 @@ input {
     justify-content: center;
     align-items: center;
     background-color: color-mix(in srgb, var(--modal-overlay), transparent 60%);
-    z-index: 99999;
+    z-index: 99;
     pointer-events: none;
     opacity: 0;
 
@@ -586,7 +586,7 @@ input {
 .modal-form-title {
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 16px;
 }
@@ -616,7 +616,7 @@ input {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
     color: var(--subtle-text);
 }
 
@@ -661,7 +661,7 @@ input {
 .checkbox-label {
     font-size: 12px;
     line-height: 1.16;
-    letter-spacing: 4%;
+    letter-spacing: 0.04em;
     color: var(--subtle-text);
 }
 
