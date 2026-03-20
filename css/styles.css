@@ -578,6 +578,7 @@ input {
     margin-bottom: 24px;
     cursor: pointer;
     background-color: var(--accent);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-svg {
@@ -588,7 +589,7 @@ input {
     background-color: var(--pressed-state);
 }
 
-.modal-close-svg:is(:hover, :focus){
+ .modal-close-button:is(:hover, :focus) .modal-close-svg{
     fill: var(--white-background);
 }
 
@@ -615,6 +616,7 @@ input {
     align-items: center;
     border-radius: 4px;
     margin-bottom: 8px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .name-wrapper:focus-within, .email-wrapper:focus-within, .phone-wrapper:focus-within {
@@ -628,13 +630,29 @@ input {
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: var(--subtle-text);
+    margin-bottom: 4px;
 }
 
 .name-svg, .email-svg, .phone-svg {
     width: 18px;
     height: 24px;
     fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.name-wrapper:focus-within .name-svg,
+.phone-wrapper:focus-within .phone-svg,
+.email-wrapper:focus-within .email-svg {
+    fill: var(--primary-brand);
+}
+
+.input-name:focus,
+.input-phone:focus,
+.input-email:focus {
+    outline: none;
+    border-color: var(--primary-brand);
+}
+
 
 .input-name, .input-email, .input-phone {
     border: none;
@@ -654,6 +672,9 @@ input {
     color: #75757580;
     margin-bottom: 16px;
     outline: none;
+    border: 1px solid var(--modal-overlay);
+    border-radius: 4px;
+
 }
 
 .textarea:focus-within {
@@ -674,6 +695,13 @@ input {
     letter-spacing: 0.04em;
     color: var(--subtle-text);
 }
+
+.check-empty-svg{
+    width: 16px;
+    height: 16px;
+    fill: var(--subtle-text);
+}
+
 
 .checkbox-label-link {
     text-decoration: underline;
@@ -696,9 +724,12 @@ input {
     color: white;
     background-color: var(--primary-brand);
     box-shadow: 0px 4px 4px 0px #00000026;
-
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.submit-button:is(:hover, :focus) {
+    background-color: var(--pressed-state);
+}
 
 
