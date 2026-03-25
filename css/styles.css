@@ -634,6 +634,7 @@ input {
     letter-spacing: 0.04em;
     color: var(--subtle-text);
     margin-bottom: 4px;
+    display: block;
     /*background-color: #31d0aa;*/
 }
 
@@ -724,10 +725,9 @@ input {
     border-color: var(--pressed-state);
 }
 
-.checkbox:checked + .checkbox-label .check-mark-svg {
+.checkbox:checked + .checkbox-label .check-svg {
     fill: var(--light);
 }
-
 
 .checkbox-label-link {
     text-decoration: underline;
