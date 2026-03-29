@@ -634,7 +634,7 @@ input {
 .input-name-label, .input-email-label, .input-phone-label, .textarea-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--subtle-text);
     margin-bottom: 4px;
@@ -698,18 +698,17 @@ input {
 .checkbox-wrapper {
     margin-bottom: 24px;
     align-items: center;
-    gap: 8px;
+    /*gap: 8px;*/
 }
 
 .checkbox-label {
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--subtle-text);
 }
 
 .check-icon{
-    display: flex;
     margin-right: 8px;
     justify-content: center;
     align-items: center;
